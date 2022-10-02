@@ -13,6 +13,7 @@ import com.example.facefam.APP_ID
 import io.agora.agorauikit_android.AgoraConnectionData
 import io.agora.agorauikit_android.AgoraVideoViewer
 
+@OptIn(ExperimentalUnsignedTypes::class)
 @Composable
 fun VideoScreen(
     roomName: String,

@@ -29,7 +29,7 @@ class RoomViewModel: ViewModel() {
             return
         }
         viewModelScope.launch {
-            _onJoinEvent.emit(roomName.value.text)
+            _onJoinEvent.tryEmit(roomName.value.text)
         }
     }
 }
