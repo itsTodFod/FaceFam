@@ -51,7 +51,7 @@ class MainActivity : ComponentActivity() {
                             val roomName = it.arguments?.getString("roomName") ?: return@composable
                             VideoScreen(
                                 roomName = roomName,
-                                onNavigateUp = navController::navigateUp
+                                onNavigationUp = navController::navigateUp
                             )
                         }
                     }
